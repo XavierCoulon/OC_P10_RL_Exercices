@@ -36,4 +36,5 @@ Le script se déroule en plusieurs étapes :
 1.  **Configuration** : Définition des hyperparamètres comme le taux d'apprentissage, le facteur de dépréciation et la stratégie d'exploration (epsilon-greedy).
 2.  **Entraînement** : L'agent est entraîné sur 15 000 épisodes. Durant chaque épisode, il explore l'environnement et met à jour une **Q-table** en utilisant l'équation de Bellman pour apprendre la valeur de chaque action dans chaque état.
 3.  **Visualisation** : Après l'entraînement, une *heatmap* de la Q-table est générée avec `matplotlib` et `seaborn` pour visualiser la politique apprise par l'agent.
-4.  **Démonstration** : Pour finir, le script lance 5 épisodes en mode visuel pour montrer l'agent utiliser sa politique apprise pour naviguer sur le lac.
+4.  **Démonstration** : Le script lance 5 épisodes en mode visuel pour montrer l'agent utiliser sa politique apprise pour naviguer sur le lac.
+5.  **Évaluation** : Enfin, une évaluation statistique est menée sur 100 épisodes (sans exploration) pour mesurer la performance réelle de l'agent. Le taux de réussite final est ensuite affiché.
